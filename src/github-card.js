@@ -65,10 +65,6 @@ class githubcard extends Component {
             <div className="card text-white bg-dark" style={{width: '25rem'}}>
                 <div className="card-body">
                     <Search fetchProfile={this.fetchProfile.bind(this)}/>
-                    {/* <img className="card-img" src={anu} alt="Card image cap" />
-                    <h5 className="card-title">Dark card title</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at.</p>
-                    <a href="#" className="btn btn-primary">View Github Profile</a> */}
                     <Profile data={this.state}/>
                 </div>
             </div>
@@ -105,14 +101,6 @@ class Search extends Component {
     render() { 
         return ( 
                 <div className="search-profile">
-                    {/* <form onSubmit={ () => this.handleform(this) }>
-                        <input class="form-control border-secondary py-2" ref="username" type="search" placeholder="search user" />
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                    </form> */}
                     <form className="navbar-form" role="search" onSubmit={this.handleform.bind(this)}>
                         <div className="input-group add-on">
                             <input className="form-control" ref={this.input} placeholder="Search" name="srch-term" id="srch-term" type="text"/>
@@ -174,58 +162,3 @@ class Profile extends Component {
     }
 }
  
-
-
-// class GithubCard extends React.Component{
-
-//     constructor(props){
-//         super(props)
-//         this.state = {
-//             username: 'verma-ananya',
-//             name:'',
-//             avatar:'',
-//             location:'',
-//             repos:'',
-//             followers: '',
-//             following:'',
-//             homeUrl:'',
-//             notFound:''
-//         }
-//     }
-
-//     profileFetch(username) {  //function declaration which is used to fetch user data by the url
-
-//         let url = '${API}/${username}';
-//         fetch(url)
-//         .then((res) => res.json())
-//         .then((data) => {
-//             this.setState({
-//                 username: data.login,
-//                 name: data.name,
-//                 avatar: data.avatar_url,
-//                 location: data.location,
-//                 repos: data.public_repos,
-//                 followers: data.followers,
-//                 following: data.following,
-//                 homeUrl: data.html_url,
-//                 notFound: data.message
-//             })
-//         })
-//         .catch((err) => console.log('Problem occured while fetching the user profile'))
-//     }
-
-//     //componentDidMount = This is where AJAX requests and DOM or state updates should occur. 
-//     componentDidMount(){
-//         this.profileFetch(this.state.username);
-//     }
-//     render(){
-//         return (
-            
-//         )
-//     }
-
-
-
-
-
-// }
