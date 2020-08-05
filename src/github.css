@@ -79,6 +79,11 @@ button{
 	padding: 0em;
 }
 
+.notfound{
+	padding-top: 1rem;
+	text-align: center;
+}
+
 .user-profile{
 	text-align: center;
 }

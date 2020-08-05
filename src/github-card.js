@@ -99,6 +99,7 @@ class Search extends Component {
 
         this.props.fetchProfile(username);
         this.input.current.value=''
+
     }
 
     render() { 
@@ -140,8 +141,8 @@ class Profile extends Component {
         if (data.notFound === 'Not Found')
         return (
             <div className="notfound">
-                <h2>Oops !!!</h2>
-                <p>The Component Couldn't Find The You Were Looking For . Try Again </p>
+                <h4>Oops !!!</h4>
+                <p>Username not found.<br/> Try Again </p>
             </div>
         );
         else
