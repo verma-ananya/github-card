@@ -64,7 +64,8 @@ button{
 }
 
 .card {
-	margin: auto;
+	
+	margin: inherit;
 	overflow: hidden;
 	position: absolute;
 	margin-bottom: 20px;
