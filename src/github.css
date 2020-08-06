@@ -1,13 +1,20 @@
+
 button{
 	position: relative;
 }
 
-.card {
-	
-	margin: auto;
-	margin-top: 300px;
+body{
 	overflow: hidden;
-	position: absolute;
+}
+
+.card {
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+
 }
 
 .search-body{

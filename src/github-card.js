@@ -62,10 +62,14 @@ class githubcard extends Component {
     render() { 
         return ( 
         <div className="container">
-            <div className="card text-white bg-dark" style={{width: '25rem'}}>
-                <div className="card-body">
-                    <Search fetchProfile={this.fetchProfile.bind(this)}/>
-                    <Profile data={this.state}/>
+            <div className="row">
+                <div className="col-12" style={{height: '100vh'}}>
+                    <div className="card text-white bg-dark" style={{width: '25rem'}}>
+                        <div className="card-body">
+                            <Search fetchProfile={this.fetchProfile.bind(this)}/>
+                            <Profile data={this.state}/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div> );
